@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../../assets/images/mar02.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.sectionIntro {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 33, 83, 0.5), rgb(0, 0, 0));
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  border-radius: 12px;
+  border: 2px solid rgb(170, 169, 97);
+  height: 30%;
+  margin-bottom: 24px;
+  box-shadow: 0 0 10px rgb(189, 186, 34);
+  opacity: 0;
+  animation: show 5s ease;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.container h1 {
+  font-family: "Pirata One", system-ui;
+  font-size: 3em;
+  letter-spacing: 8px;
+  margin-bottom: 48px;
+  color: rgb(170, 169, 97);
+  text-shadow: 1px 1px 5px rgba(105, 104, 19, 0.3);
+  opacity: 0;
+  animation: show 5s ease;
+  animation-fill-mode: forwards;
+}
+.container p {
+  font-family: "Cinzel", serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 24px;
+  margin-bottom: 48px;
+  color: rgb(255, 255, 255);
+  opacity: 80%;
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 12px;
+  border-radius: 12px;
+  opacity: 0;
+  animation: show 5s ease;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.container button {
+  font-family: "IM Fell English", serif;
+  padding: 12px 24px;
+  border: 1px solid rgb(189, 186, 34);
+  border-radius: 6px;
+  background-color: rgb(34, 34, 34);
+  color: rgb(189, 186, 34);
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 2px rgb(243, 255, 137);
+
+  opacity: 0;
+  animation: show 3s ease;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+
+.container button:hover {
+  transform: translateY(-2px);
+  background-color: rgb(74, 83, 33);
+  box-shadow: 0 -3px 10px rgb(243, 255, 137);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
