@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
+.heroSection {
+    position: relative;
+    background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
+    background-size: cover;
+
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(circle, rgba(63, 0, 0, 0.3), rgba(27, 0, 0, 0.774));
+
+    pointer-events: none;
+}
+
 h2 {
-    background-color: rgb(114, 31, 31);
+    font-family: "Pirata One", system-ui;
+    font-size: 3em;
+    margin-bottom: 12px;
+}
+
+p {
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+    margin-bottom: 24px;
+}
+
+.btn {
+    font-family: "IM Fell English", serif;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: url(../../assets/images/mapa_descktop.jpg);
+    box-shadow: 2px 2px 2px rgba(105, 95, 62, 0.555);
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+button:hover {
+    transform: skewY(2deg);
 }

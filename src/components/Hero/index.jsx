@@ -2,7 +2,12 @@ import styles from "./Hero.module.css"
 
 function Hero() {
     return(
-        <h2 className={styles.h2}>One Piece</h2>
+        <section className={styles.heroSection}>
+            <div className={styles.overlay}></div>
+            <h2>Tudo começou com as palavras de um homem...</h2>
+            <p>"A riqueza, fama e poder..."</p>
+            <button className={styles.btn}>Explorar o Mundo</button>
+        </section>
     )
 }
 
