@@ -6,15 +6,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background: url(../../assets/images/mar02.jpg) center center no-repeat;
-  background-size: cover;
-}
-
 .sectionIntro {
   position: relative;
   height: 100vh;
   width: 100vw;
+  background: url(../../assets/images/mar02.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .overlay {
@@ -25,6 +22,49 @@ body {
   background: radial-gradient(circle, rgba(0, 33, 83, 0.5), rgb(0, 0, 0));
 }
 
+.darkScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgb(11, 22, 44);
+
+  opacity: 0;
+  transition: opacity 0.6s;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.showDark {
+  opacity: 1;
+}
+
+.flag {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(0.8);
+
+  width: 180px;
+
+  box-shadow: 0 0 12px rgb(189, 186, 34);
+
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.6s ease;
+}
+
+.showFlag {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .container {
   position: relative;
   height: 100%;
@@ -33,16 +73,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-inline: 12px;
 }
 
 .container img {
   border-radius: 12px;
   border: 2px solid rgb(170, 169, 97);
-  height: 30%;
+  width: 500px;
   margin-bottom: 24px;
   box-shadow: 0 0 10px rgb(189, 186, 34);
   opacity: 0;
-  animation: show 5s ease;
+  animation: show 3s ease;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
@@ -50,18 +91,20 @@ body {
 .container h1 {
   font-family: "Pirata One", system-ui;
   font-size: 3em;
+  text-align: center;
   letter-spacing: 8px;
   margin-bottom: 48px;
   color: rgb(170, 169, 97);
   text-shadow: 1px 1px 5px rgba(105, 104, 19, 0.3);
   opacity: 0;
-  animation: show 5s ease;
+  animation: show 3s ease;
   animation-fill-mode: forwards;
 }
 .container p {
   font-family: "Cinzel", serif;
   font-size: 1em;
   font-weight: 500;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 24px;
   margin-bottom: 48px;
@@ -71,7 +114,7 @@ body {
   padding: 12px;
   border-radius: 12px;
   opacity: 0;
-  animation: show 5s ease;
+  animation: show 3s ease;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
@@ -98,6 +141,16 @@ body {
   transform: translateY(-2px);
   background-color: rgb(74, 83, 33);
   box-shadow: 0 -3px 10px rgb(243, 255, 137);
+}
+
+@media (max-width: 768px) {
+  .sectionIntro {
+    background: url(../../assets/images/mar_mobile.jpg) center center no-repeat;
+  }
+
+  .container img {
+    width: 300px;
+  }
 }
 
 @keyframes show {
