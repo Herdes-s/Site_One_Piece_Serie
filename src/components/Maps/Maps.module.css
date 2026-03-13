@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
+.sectionMaps {
+  position: relative;
+  background: url(../../assets/images/fundo_do_mar.jpg) center bottom no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(to top, black, rgba(6, 37, 83, 0.3));
+  z-index: 1;
+}
+
+.maps {
+  position: relative;
+  padding: 24px 48px;
+  z-index: 2;
+}
+
+.maps h2 {
+  font-family: "Pirata One", system-ui;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(20, 20, 20);
+  text-shadow: 2px 2px 5px rgba(26, 24, 24, 0.5);
+  background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 48px;
+  box-shadow: 2px 2px 5px rgba(0, 18, 51, 0.6);
+}
+
+.maps .map h3 {
+  font-size: 2em;
+  font-family: "Cinzel", serif;
+  color: rgb(32, 128, 218);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.maps .map img {
+  width: 800px;
+}
+
+.maps .map p {
+  font-family: "IM Fell English", serif;
+  background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
+  background-size: cover;
+  width: 800px;
+  padding: 8px 12px;
+}

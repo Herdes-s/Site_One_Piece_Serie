@@ -9,10 +9,10 @@ function Header() {
             <img className={styles.logo} src={logo} alt="Logo_One_Piece"/>
             <nav className={styles.nav}>
                 <a href="/">Home</a>
-                <a href="/">Tripulações</a>
-                <a href="/">Akuma no Mi</a>
-                <a href="/">Ilhas</a>
+                <a href="/">Mapas</a>
                 <a href="/">Procurados</a>
+                <a href="/">Bandos</a>
+                <a href="/">Mais informações</a>
             </nav>
         </header>
     );

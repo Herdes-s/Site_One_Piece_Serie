@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import Maps from "../../components/Maps";
 import styles from "./Home.module.css";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <div className={styles.main}>
       <Header />
       <Hero />
+      <Maps />
     </div>
   );
 }

@@ -27,13 +27,13 @@
     pointer-events: none;
 }
 
-h2 {
+.heroSection h2 {
     font-family: "Pirata One", system-ui;
     font-size: 3em;
     margin-bottom: 12px;
 }
 
-p {
+.heroSection p {
     font-family: "Cinzel", serif;
     font-size: 1.5em;
     margin-bottom: 24px;
