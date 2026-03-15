@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
+.sectionPosters {
+  position: relative;
+  background: url(../../assets/images/mural_madeira.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background: radial-gradient(circle, rgba(97, 97, 97, 0.2), rgba(0, 0, 0, 0.8));
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container {
+  padding: 24px 48px;
+}
+
+.container h2 {
+  font-family: "Pirata One", system-ui;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(20, 20, 20);
+  text-shadow: 2px 2px 5px rgba(26, 24, 24, 0.5);
+  background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 48px;
+  box-shadow: 2px 2px 5px rgba(0, 18, 51, 0.6);
+  z-index: 2;
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+}
+
+
+.cards .card img {
+  width: 200px;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.cards .card img:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 5px 5px 10px black;
+}
