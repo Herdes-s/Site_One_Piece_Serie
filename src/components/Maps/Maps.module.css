@@ -36,6 +36,10 @@
   box-shadow: 2px 2px 5px rgba(0, 18, 51, 0.6);
 }
 
+.maps .map {
+  margin-bottom: 24px;
+}
+
 .maps .map h3 {
   font-size: 2em;
   font-family: "Cinzel", serif;
@@ -44,7 +48,7 @@
 }
 
 .maps .map img {
-  width: 800px;
+  max-width: 800px;
 }
 
 .maps .map p {

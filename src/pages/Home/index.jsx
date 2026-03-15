@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import Locates from "../../components/Locates";
 import Maps from "../../components/Maps";
 import Posters from "../../components/Posters";
 
@@ -13,6 +14,7 @@ function Home() {
       <Hero />
       <Maps />
       <Posters />
+      <Locates />
     </div>
   );
 }

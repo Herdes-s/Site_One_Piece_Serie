@@ -35,11 +35,9 @@
   background-size: cover;
   margin-bottom: 48px;
   box-shadow: 2px 2px 5px rgba(0, 18, 51, 0.6);
-  z-index: 2;
 }
 
 .cards {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
