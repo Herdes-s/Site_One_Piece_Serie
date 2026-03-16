@@ -52,7 +52,7 @@
 
   width: 180px;
 
-  box-shadow: 0 0 12px rgb(189, 186, 34);
+  filter: drop-shadow(0 0 12px rgb(189, 186, 34));
 
   opacity: 0;
   pointer-events: none;

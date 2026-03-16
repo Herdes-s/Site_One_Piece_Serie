@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
+.footer {
+  position: relative;
+  background: url(../../assets/images/madeira.jpg) center center no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 48px;
+
+  box-shadow: 0px 0px 5px rgb(143, 141, 37);
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+
+.identity {
+  z-index: 2;
+}
+
+.identity h2 {
+  font-family: "Pirata One", system-ui;
+  font-size: 3em;
+  margin-bottom: 12px;
+  color: rgb(126, 160, 192);
+  background: url(../../assets/images/madeira.jpg);
+
+  padding: 6px 12px;
+    border-radius: 4px;
+
+  box-shadow: 0px 2px 3px rgb(0, 0, 0);
+}
+
+.nav {
+  z-index: 2;
+}
+
+.nav a {
+  display: block;
+  color: rgb(53, 85, 114);
+  font-weight: 500;
+  margin-right: 24px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-family: "IM Fell English", serif;
+  background: url(../../assets/images/madeira.jpg);
+
+  padding: 6px 12px;
+  border-radius: 4px;
+
+  box-shadow: 0px 2px 3px rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.nav a:nth-child(even) {
+  transform: rotate(12deg);
+}
+
+.nav a:hover {
+  transform: rotate(0);
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  color: rgb(74, 139, 201);
+}
+
+.credits {
+  font-family: "IM Fell English", serif;
+  margin-bottom: 24px;
+  color: rgb(126, 160, 192);
+  background: url(../../assets/images/madeira.jpg);
+  padding: 6px 12px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px rgb(0, 0, 0);
+
+  z-index: 2;
+}
