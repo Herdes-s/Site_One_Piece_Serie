@@ -8,37 +8,37 @@ import mihawks from "../assets/images/Wanted/Mihawk's.jpg";
 const Wanted = [
     {
         id: 1,
+        name: "Gol D Roger",
+        bando: "Piratas do Roge",
+        image: roger,
+        fruta: "",
+    },
+    {
+        id: 2,
         name: "Monkey D Luffy",
         bando: "Chapel de Palhas",
         image: luffy,
         fruta: "Gomu Gomu no Mi",
     },
     {
-        id: 2,
+        id: 3,
         name: "Arlong",
         bando: "Piratas do Arlong",
         image: arlong,
         fruta: "",
     },
     {
-        id: 3,
+        id: 4,
         name: "Buggy",
         bando: "Piratas Buggy",
         image: buggy,
         fruta: "Bara Bara no Mi",
     },
     {
-        id: 4,
+        id: 5,
         name: "Mihawk's",
         bando: "",
         image: mihawks,
-        fruta: "",
-    },
-    {
-        id: 5,
-        name: "Gol D Roger",
-        bando: "Piratas do Roge",
-        image: roger,
         fruta: "",
     },
 ]

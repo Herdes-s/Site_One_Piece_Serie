@@ -37,7 +37,7 @@
 }
 
 .locates {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .locates h3 {
@@ -45,7 +45,8 @@
   font-size: 2em;
   font-family: "Cinzel", serif;
   color: rgb(24, 8, 0);
-  background-color: rgba(138, 138, 138, 0.5);
+    background: url(../../assets/images/mural_madeira.jpg) center center no-repeat;
+  background-size: cover;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
@@ -60,9 +61,12 @@
 }
 
 .locates .info p {
-    position: relative;
+  position: relative;
+  background: url(../../assets/images/mural_madeira.jpg) center center no-repeat;
+  background-size: cover;
   font-family: "IM Fell English", serif;
-  color: rgb(255, 255, 255);
+  color: rgb(15, 28, 71);
+  text-shadow: 0 0 12px rgb(255, 255, 255);
   width: 20%;
   padding: 24px 48px;
   z-index: 2;

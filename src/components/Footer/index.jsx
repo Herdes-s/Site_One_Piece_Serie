@@ -16,7 +16,7 @@ function Footer() {
       </div>
       <div className={styles.credits}>
         <h3>
-          Projeto React inspirado na série One Piece Desenvolvido por Herdes
+          Projeto React inspirado na série One Piece Desenvolvido por Ernand
           Soares
         </h3>
       </div>

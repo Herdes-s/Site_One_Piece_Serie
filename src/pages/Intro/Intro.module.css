@@ -84,7 +84,7 @@
   box-shadow: 0 0 10px rgb(189, 186, 34);
   opacity: 0;
   animation: show 3s ease;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -115,7 +115,7 @@
   border-radius: 12px;
   opacity: 0;
   animation: show 3s ease;
-  animation-delay: 6s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -133,7 +133,7 @@
 
   opacity: 0;
   animation: show 3s ease;
-  animation-delay: 9s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
