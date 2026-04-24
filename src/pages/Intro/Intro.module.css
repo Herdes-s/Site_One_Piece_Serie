@@ -1,25 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.sectionIntro {
+.intro {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: url(../../assets/images/mar02.jpg) center center no-repeat;
+  background: url(../../assets/Images/mar_mobile.jpg) center center no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .overlay {
-  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
   background: radial-gradient(circle, rgba(0, 33, 83, 0.5), rgb(0, 0, 0));
+
+  z-index: 1;
 }
 
 .darkScreen {
@@ -34,6 +28,7 @@
 
   opacity: 0;
   transition: opacity 0.6s;
+
   z-index: 5;
   pointer-events: none;
 }
@@ -50,9 +45,9 @@
 
   transform: translate(-50%, -50%) scale(0.8);
 
-  width: 180px;
+  width: 11.25rem;
 
-  filter: drop-shadow(0 0 12px rgb(189, 186, 34));
+  filter: drop-shadow(0 0 12px rgb(var(--color-contrast)));
 
   opacity: 0;
   pointer-events: none;
@@ -65,71 +60,91 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-.container {
+.back_bottom {
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+  height: 600px;
+}
+
+.intro_container {
   position: relative;
   height: 100%;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-inline: 12px;
+  gap: 3rem;
+
+  z-index: 2;
 }
 
-.container img {
-  border-radius: 12px;
-  border: 2px solid rgb(170, 169, 97);
-  width: 500px;
-  margin-bottom: 24px;
-  box-shadow: 0 0 10px rgb(189, 186, 34);
+.intro_container .intro_img {
+  border-radius: 0.75rem;
+  border: 2px solid rgb(var(--black-base));
+  width: max(21.875rem, 30%);
+  box-shadow: 0 0 10px rgb(var(--black-base));
   opacity: 0;
+  box-shadow: 0 18px 12px rgba(var(--black-base), 0.36);
   animation: show 3s ease;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
-.container h1 {
-  font-family: "Pirata One", system-ui;
-  font-size: 3em;
+.intro_container .intro_title {
+  font-family: var(--font-contrast);
+  font-size: clamp(2rem, 4.07vw + 0.95rem, 4rem);
+  font-weight: 100;
   text-align: center;
-  letter-spacing: 8px;
-  margin-bottom: 48px;
-  color: rgb(170, 169, 97);
+  color: rgb(var(--color-contrast));
   text-shadow: 1px 1px 5px rgba(105, 104, 19, 0.3);
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   animation: show 3s ease;
   animation-fill-mode: forwards;
 }
-.container p {
-  font-family: "Cinzel", serif;
-  font-size: 1em;
+
+.intro_container .intro_title .span {
+  font-size: 2.5rem;
+}
+
+.intro_container .intro_box_title {
+  background: linear-gradient(
+    to top,
+    rgba(var(--black-base), 0) 0%,
+    rgba(var(--black-base)) 60%
+  );
+  padding: 1rem;
+}
+
+.intro_container .intro_citation {
+  font-family: var(--font-primary);
+  font-size: clamp(1rem, 3.05vw + 0.21rem, 2.5rem);
   font-weight: 500;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 24px;
-  margin-bottom: 48px;
-  color: rgb(255, 255, 255);
+  text-align: justify;
+  color: rgb(var(--black-base));
   opacity: 80%;
-  background-color: rgba(34, 34, 34, 0.8);
-  padding: 12px;
-  border-radius: 12px;
   opacity: 0;
+  text-shadow: 0 18px 12px rgba(var(--black-base), 0.68);
+
   animation: show 3s ease;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
-.container button {
-  font-family: "IM Fell English", serif;
-  padding: 12px 24px;
-  border: 1px solid rgb(189, 186, 34);
-  border-radius: 6px;
-  background-color: rgb(34, 34, 34);
-  color: rgb(189, 186, 34);
-  font-size: 1em;
+.intro_container .intro_btn {
+  font-family: var(--text-secondary);
+  padding: 1rem 1.5rem;
+  border: 2px solid rgb(var(--black-base));
+  border-radius: 0.75rem;
+  background-color: rgb(var(--button-color));
+  color: rgb(var(--black-base));
+  font-size: 1.25em;
   cursor: pointer;
+  box-shadow: 0 18px 12px rgba(var(--black-base), 0.36);
   transition: all 0.3s ease;
-  box-shadow: 0 0 2px rgb(243, 255, 137);
 
   opacity: 0;
   animation: show 3s ease;
@@ -137,19 +152,29 @@
   animation-fill-mode: forwards;
 }
 
-.container button:hover {
+.intro_container .intro_btn:hover {
   transform: translateY(-2px);
   background-color: rgb(74, 83, 33);
   box-shadow: 0 -3px 10px rgb(243, 255, 137);
 }
 
-@media (max-width: 768px) {
-  .sectionIntro {
-    background: url(../../assets/images/mar_mobile.jpg) center center no-repeat;
+@media (min-width: 768px) {
+  .intro_container {
+    gap: 1rem;
   }
 
-  .container img {
-    width: 300px;
+  .intro_container .intro_title {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .intro_container .intro_title .span {
+    font-size: clamp(2rem, 4.07vw + 0.95rem, 4rem);
+  }
+
+  .intro_container .intro_box_title {
+    background: rgba(var(--black-base));
+    padding: 1rem;
   }
 }
 

@@ -1,8 +1,8 @@
-import luffy from "../assets/images/Wanted/Luffy.jpg";
-import arlong from "../assets/images/Wanted/Arlong.jpg";
-import buggy from "../assets/images/Wanted/Buggy.jpg";
-import roger from "../assets/images/Wanted/Gol_D_Roger.jpg";
-import mihawks from "../assets/images/Wanted/Mihawk's.jpg";
+import luffy from "../assets/Images/Wanted/Luffy.jpg";
+import arlong from "../assets/Images/Wanted/Arlong.jpg";
+import buggy from "../assets/Images/Wanted/Buggy.jpg";
+import roger from "../assets/Images/Wanted/Gol_D_Roger.jpg";
+import mihawks from "../assets/Images/Wanted/Mihawk's.jpg";
 
 
 const Wanted = [
@@ -40,7 +40,7 @@ const Wanted = [
         bando: "",
         image: mihawks,
         fruta: "",
-    },
+    }
 ]
 
 export default Wanted;

@@ -1,59 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+.hero {
+  position: relative;
+  background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
+  background-size: cover;
 
-.heroSection {
-    position: relative;
-    background: url(../../assets/images/mapa_descktop.jpg) center center no-repeat;
-    background-size: cover;
+  height: 100vh;
 
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border-bottom: 5px solid rgba(27, 0, 0, 0.774);
+  border-bottom: 5px solid rgba(27, 0, 0, 0.774);
+  padding: 2.875rem 1.5rem;
 }
 
 .overlay {
-    position: absolute;
+  position: absolute;
 
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background: radial-gradient(circle, rgba(63, 0, 0, 0.3), rgba(27, 0, 0, 0.774));
+  background: radial-gradient(
+    circle,
+    rgba(var(--black-base), 0.3),
+    rgba(var(--black-base), 0.5)
+  );
 
-    pointer-events: none;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.heroSection h2 {
-    font-family: "Pirata One", system-ui;
-    font-size: 3em;
-    margin-bottom: 12px;
+.hero h2 {
+  position: relative;
+  font-family: var(--font-secondary);
+  font-size: clamp(1.5rem, 2.04vw + 0.97rem, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: #3f220e;
+  text-align: center;
+
+  z-index: 2;
 }
 
-.heroSection p {
-    font-family: "Cinzel", serif;
-    font-size: 1.5em;
-    margin-bottom: 24px;
+.hero p {
+  font-family: var(--font-primary);
+  font-size: clamp(1rem, 1.02vw + 0.74rem, 1.5rem);
+  margin-bottom: 2.625rem;
+  color: rgb(var(--black-base));
+  font-weight: 600;
 }
 
 .btn {
-    font-family: "IM Fell English", serif;
-    font-size: 1em;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 12px;
-    background: url(../../assets/images/mapa_descktop.jpg);
-    box-shadow: 2px 2px 2px rgba(105, 95, 62, 0.555);
-    cursor: pointer;
+  position: relative;
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  padding: 1rem 3rem;
+  border: 1px solid #3f220e;
+  background: url(../../assets/images/mapa_descktop.jpg);
+  box-shadow: 2px 2px 2px rgba(var(--color-detail), 0.6);
+  cursor: pointer;
 
-    transition: all .3s ease;
+  z-index: 2;
+
+  transition: transform 0.3s ease;
 }
 
-button:hover {
-    transform: skewY(2deg);
+.btn:hover {
+  transform: translateY(-2px);
 }

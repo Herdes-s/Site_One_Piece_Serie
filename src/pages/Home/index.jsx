@@ -1,23 +1,18 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Hero from "../../components/Hero";
-import Locates from "../../components/Locates";
-import Maps from "../../components/Maps";
-import Posters from "../../components/Posters";
-
-import styles from "./Home.module.css";
+import Footer from "../../Components/Footer";
+import Hero from "../../Components/Hero";
+import Location from "../../Components/Location";
+import Maps from "../../Components/Maps";
+import Wanted from "../../Components/Wanted";
 
 function Home() {
-
   return (
-    <div className={styles.main}>
-      <Header />
+    <main>
       <Hero />
       <Maps />
-      <Posters />
-      <Locates />
+      <Wanted />
+      <Location />
       <Footer />
-    </div>
+    </main>
   );
 }
 

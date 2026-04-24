@@ -1,65 +1,112 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
-
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100px;
+  width: 100%;
+
+  background: url(../../assets/Images/madeira.jpg) center center no-repeat;
+  background-size: cover;
+  padding-inline: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 3;
+}
+
+.header_logo {
+  width: 11.5625rem;
+}
+
+.header_nav {
+  position: absolute;
+  top: 100px;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-400px);
+  transition: all 0.3s ease ;
+
+  opacity: 0;
+
+  z-index: 0;
+}
+
+.header_nav.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header_nav a {
+  color: rgb(var(--black-base));
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 1s ease;
+}
+
+.header_nav a:hover {
+  transform: rotate(30deg);
+}
+
+.header_menuBox {
+  padding: 1rem 1.75rem;
+  background: url(../../assets/Images/madeira_brilho.jpg) center center
+    no-repeat;
+  border: 1px solid rgba(var(--black-base), 0.64);
+  box-shadow: 4px 4px 4px rgba(var(--black-base), 0.64);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_box {
+  padding: 0.5rem 1rem;
+  background: url(../../assets/Images/madeira_brilho.jpg) center center
+    no-repeat;
+  border: 1px solid rgba(var(--black-base), 0.64);
+  box-shadow: 4px 4px 4px rgba(var(--black-base), 0.64);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_menu {
+  filter: drop-shadow(4px 4px 4px rgba(var(--black-base), 0.64));
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+  height: 200px;
+
+  }
+  .header_menuBox {
+    display: none;
+  }
+
+  .header_nav {
     position: relative;
-    background: url(../../assets/images/madeira.jpg) center center no-repeat;
-    background-size: cover;
+    top: 0;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
-    padding: 24px 48px;
+    width: auto;
+    height: auto;
 
-    box-shadow: 0px 0px 5px rgb(143, 141, 37);
-}
+    transform: none;
 
-.overlay {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    
-    height: 100%;
-    width: 100%;
-    
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-    z-index: 1;
-}
-
-.logo {
-    width: 250px;
-    
-    
-    z-index: 2;
-}
-
-.nav a{
-    position: relative;
-    display: inline-block;
-    color: rgb(53, 85, 114);
-    font-weight: 500;
-    margin-right: 24px;
-    text-decoration: none;
-    font-family: "IM Fell English", serif;
-    background: url(../../assets/images/madeira.jpg);
-    
-    padding: 6px 12px;
-    border-radius: 4px;
-    z-index: 2;
-    
-    box-shadow: 0px 2px 3px rgb(0, 0, 0);
-    transition: all .3s ease;
-}
-
-.nav a:nth-child(even) {
-    
-    transform: rotate(12deg);
-}
-
-.nav a:hover {
-    transform: rotate(0);
-    transform: translateY(-2px);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-    color: rgb(74, 139, 201);
+    opacity: 1;
+  }
 }

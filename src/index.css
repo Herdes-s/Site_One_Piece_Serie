@@ -1,7 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+
 * {
-    @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(0, 3, 10);
+:root {
+  --font-primary: "Cinzel", serif;
+  --font-secondary: "IM Fell English", serif;
+  --font-contrast: "Pirata One", system-ui;
+
+  --color-primary: ;
+
+  --color-contrast: 189, 186, 34;   /* Dourado */
+  --color-detail: 170, 169, 97;     /* Dourado fraco */
+
+  --button-color: 125, 124, 76;     /*Dourado desbotado*/
+
+  --white-base: 255, 255, 255;      /* Branco */
+  --black-base: 0, 0, 0;            /* Preto */
+}
+
+body, html {
+  background-color: rgb(0, 3, 10);
+  color: rgb(var(--white-base));
+
+  scroll-behavior: smooth;
 }
