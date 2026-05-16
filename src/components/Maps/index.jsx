@@ -1,5 +1,4 @@
 import styles from "./Maps.module.css";
-
 import eastBlue from "../../assets/images/eastBlue.jpg";
 import grandLine from "../../assets/images/grandLine.webp";
 
