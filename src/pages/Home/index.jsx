@@ -1,8 +1,8 @@
-import Footer from "../../Components/Footer";
-import Hero from "../../Components/Hero";
-import Location from "../../Components/Location";
-import Maps from "../../Components/Maps";
-import Wanted from "../../Components/Wanted";
+import Footer from "../../components/Footer";
+import Hero from "../../components/Hero";
+import Location from "../../components/Location";
+import Maps from "../../components/Maps";
+import Wanted from "../../components/Wanted";
 
 function Home() {
   return (
