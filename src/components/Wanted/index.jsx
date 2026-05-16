@@ -1,6 +1,6 @@
 import styles from "./Wanted.module.css";
 
-import wanted from "../../data/wanted";
+import wanteds from "../../data/wanted";
 
 function Wanted() {
   return (
@@ -13,7 +13,7 @@ function Wanted() {
           </div>
         </div>
         <div className={styles.container_grid}>
-          {wanted.map((persona) => (
+          {wanteds.map((persona) => (
             <div className={styles.poster}>
               <img
                 className={styles.poster_img}

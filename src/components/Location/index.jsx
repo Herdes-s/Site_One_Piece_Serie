@@ -1,7 +1,7 @@
 import styles from "./Location.module.css";
 
-import baratie from "../../assets/images/locais/Baratie.jpg";
-import ilhaDosCactos from "../../assets/images/locais/Cactus_Island.jpg";
+import baratie from "../../assets/images/locais/baratie.jpg";
+import ilhaDosCactos from "../../assets/images/locais/cactus_Island.jpg";
 
 function Location() {
   return (
