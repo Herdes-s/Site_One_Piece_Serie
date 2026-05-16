@@ -43,18 +43,17 @@ function Maps() {
             <div className={styles.description}>
               <p>
                 A Grand Line é a corrente oceânica que está cercada pelos Calm
-                Belts e segue uma linha imaginária que vai do noroeste ao sudeste
-                através do meio do mundo e perpendicular à Red Line. A Red Line é
-                um vasto continente que circunda o globo a partir de nordeste para
-                sudoeste. Estas duas linhas dividem o resto do Mar em: North Blue,
-                East Blue, West Blue e South Blue.
+                Belts e segue uma linha imaginária que vai do noroeste ao
+                sudeste através do meio do mundo e perpendicular à Red Line. A
+                Red Line é um vasto continente que circunda o globo a partir de
+                nordeste para sudoeste. Estas duas linhas dividem o resto do Mar
+                em: North Blue, East Blue, West Blue e South Blue.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <a className={styles.up} href="#Hero">
-      </a>
+      <a className={styles.up} href="#Hero"></a>
     </section>
   );
 }

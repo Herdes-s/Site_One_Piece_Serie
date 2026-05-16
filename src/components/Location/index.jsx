@@ -21,9 +21,9 @@ function Location() {
             <img className={styles.img_location} src={baratie} alt="" />
             <div className={styles.description_location}>
               <p>
-                Baratie é um Restaurante que fica em alto mar, na região de Sambas
-                no East Blue, e foi fundado e é dirigido por Zeff, um antigo
-                pirata.
+                Baratie é um Restaurante que fica em alto mar, na região de
+                Sambas no East Blue, e foi fundado e é dirigido por Zeff, um
+                antigo pirata.
               </p>
             </div>
           </div>
@@ -34,8 +34,8 @@ function Location() {
             <img className={styles.img_location} src={ilhaDosCactos} alt="" />
             <div className={styles.description_location}>
               <p>
-                A Ilha Cactus é uma ilha no Paraíso com várias montanhas em forma
-                de cactos, com os "espinhos" sendo lápides.
+                A Ilha Cactus é uma ilha no Paraíso com várias montanhas em
+                forma de cactos, com os "espinhos" sendo lápides.
               </p>
             </div>
           </div>
