@@ -1,8 +1,8 @@
-import luffy from "../assets/Images/Wanted/Luffy.jpg";
-import arlong from "../assets/Images/Wanted/Arlong.jpg";
-import buggy from "../assets/Images/Wanted/Buggy.jpg";
-import roger from "../assets/Images/Wanted/Gol_D_Roger.jpg";
-import mihawks from "../assets/Images/Wanted/Mihawk's.jpg";
+import luffy from "../assets/images/wanted/Luffy.jpg";
+import arlong from "../assets/images/wanted/Arlong.jpg";
+import buggy from "../assets/images/wanted/Buggy.jpg";
+import roger from "../assets/images/wanted/Gol_D_Roger.jpg";
+import mihawks from "../assets/images/wanted/Mihawk's.jpg";
 
 
 const Wanted = [

@@ -1,6 +1,6 @@
 import styles from "./Wanted.module.css";
 
-import wanted from "../../data/Wanted";
+import wanted from "../../data/wanted";
 
 function Wanted() {
   return (

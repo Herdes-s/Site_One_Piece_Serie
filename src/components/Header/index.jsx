@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 
-import logo from "../../assets/Images/logo_onePiece.png";
-import menu from "../../assets/Icons/menu.svg";
+import logo from "../../assets/images/logo_onePiece.png";
+import menu from "../../assets/icons/menu.svg";
 import { useState } from "react";
 
 function Header() {

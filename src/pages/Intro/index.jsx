@@ -1,8 +1,8 @@
 import styles from "./Intro.module.css";
 
-import rogerImg from "../../assets/Images/roger.jpg";
-import flag from "../../assets/Images/caveira_pirata.png";
-import mapa from "../../assets/Images/mapa_descktop.jpg";
+import rogerImg from "../../assets/images/roger.jpg";
+import flag from "../../assets/images/caveira_pirata.png";
+import mapa from "../../assets/images/mapa_descktop.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";

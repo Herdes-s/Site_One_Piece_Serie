@@ -1,7 +1,7 @@
 import styles from "./Maps.module.css";
 
-import eastBlue from "../../assets/Images/eastBlue.jpg";
-import grandLine from "../../assets/Images/grandLine.webp";
+import eastBlue from "../../assets/images/eastBlue.jpg";
+import grandLine from "../../assets/images/grandLine.webp";
 
 function Maps() {
   return (
